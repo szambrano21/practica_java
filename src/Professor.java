@@ -13,7 +13,7 @@ public class Professor extends Persona {
     public String obtenirDades() {
         //vull que em doni el mateix que persona
         // mes la nota
-        return super.obtenirDades() + " El seu sou és:  " + this.nouSou;
+        return super.obtenirDades() + " El seu sou es:  " + this.nouSou;
     }
 
 }

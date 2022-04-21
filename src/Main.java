@@ -32,6 +32,13 @@ public class Main {
         dades = pr1.obtenirDades() ;
         System.out.println(dades);
 
+        ProfessorSubstitut prSbs1 = new ProfessorSubstitut();
+        prSbs1.canviarNom("Alex");
+        prSbs1.assignarDni("39658742A");
+        prSbs1.canviarSou(555.222);
+        prSbs1.assignarSubstitucio("12/05/2003" , "30/07/2003");
+        dades = prSbs1.obtenirDades() ;
 
+        System.out.println(dades);
     }
 }
