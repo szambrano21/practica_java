@@ -1,9 +1,11 @@
+import java.util.Date;
+
 public class ProfessorSubstitut extends Professor {
-    private String dataInici;
+    private Date dataInici;
 
-    private String dataFi;
+    private Date dataFi;
 
-    public void assignarSubstitucio(String dataInici, String dataFi) {
+    public void assignarSubstitucio(Date dataInici, Date dataFi) {
         this.dataInici = dataInici;
         this.dataFi = dataFi;
     }
@@ -11,6 +13,6 @@ public class ProfessorSubstitut extends Professor {
     public String obtenirDades() {
         //vull que em doni el mateix que persona
         // mes la nota
-        return super.obtenirDades() + " la seva data d'inici es:   " + this.dataInici + "i la seva data de Fi és :  " + this.dataFi;
+        return super.obtenirDades();
     }
 }

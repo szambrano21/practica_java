@@ -1,7 +1,11 @@
 //vull que heredi de persona
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Estudiant extends Persona{
     // si aqui no fico res, ja te tot el que te la clase persona gracies a extends Persona
+
 
     private double nota;
 
