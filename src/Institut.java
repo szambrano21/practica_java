@@ -3,39 +3,43 @@ import java.util.List;
 
 public class Institut {
     private String nom;
-    private Persona personas;
+    //private Persona personas;
+    private List<String> personas;
 
-    List<String> profe = new ArrayList<personas>();
-
-
+    private List<String> alumnos;
 
     public Institut() {
 
     };
 
-    public void afegirProfe(String profe) {
-        List<String> ejemploLista = new ArrayList<String>();
-        ejemploLista.add("Juan");
-        ejemploLista.add("Pedro");
-        ejemploLista.add("José");
-        ejemploLista.add("María");
-        ejemploLista.add("Sofía");
-
-        this.nom = profe;
-        System.out.println(ejemploLista);
-    }
-
-    public void afegirEstudiant(String estudiant) {
-
+    public void afegirProfe() {
+        List<String> personas = new ArrayList<String>();
         personas.add("Juan");
         personas.add("Pedro");
-        personas.add("José");
-        personas.add("María");
-        personas.add("Sofía");
-        System.out.println(personas);
+        personas.add("Jose");
+        personas.add("Maria");
+        personas.add("Sofia");
+
+        this.personas = personas;
+
+
+    }
+
+    public void afegirEstudiant() {
+        List<String> alumnos = new ArrayList<String>();
+        alumnos.add("sara");
+        alumnos.add("ismael");
+        alumnos.add("abraham");
+        alumnos.add("papo");
+        alumnos.add("dani");
+
+        this.alumnos = alumnos;
+
+
+
     }
     public String imprimirInformacio() {
 
-        return "professor que es diu " + this.nom + " i alumne que es diu: " + this.nom ;
+        return "lista de profesores " + this.personas + " i lista de alumnos: " + this.alumnos ;
     }
 }

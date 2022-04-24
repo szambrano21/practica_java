@@ -50,8 +50,8 @@ public class Main {
         System.out.println(dades + " La  seva data d'inici es " + dataInici.getDate() + "/" + dataInici.getMonth() + "/" + dataInici.getYear() + " la seva data de fi es :  " + dateFi.getDate() + "/" + dateFi.getMonth() + "/" + dateFi.getYear());
 
         Institut ins1 = new Institut();
-
-
+        ins1.afegirEstudiant();
+        ins1.afegirProfe();
         String informacio = ins1.imprimirInformacio();
         System.out.println(informacio);
 
