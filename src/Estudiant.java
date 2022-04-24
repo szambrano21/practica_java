@@ -12,7 +12,14 @@ public class Estudiant extends Persona{
     public Estudiant() {}
 
     public void posarNota(double nota) {
-        this.nota = nota;
+        if (nota > 10) {
+            throw new ArithmeticException("Access denied");
+        } else if (nota < 0) {
+            throw new ArithmeticException("Access denied");
+        } else {
+
+            this.nota = nota;
+        }
     }
 
     public String obtenirDades() {
