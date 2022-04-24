@@ -23,5 +23,4 @@ public class Persona {
     public String obtenirDades() {
         return "persona que es diu " + this.nom + " i el seu dni es: " + this.dni ;
     }
-
 }

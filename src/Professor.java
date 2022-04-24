@@ -16,7 +16,7 @@ public class Professor extends Persona {
         if ( sou > 3000) {
             throw new ArithmeticException("Access denied");
         }
-        if ( sou < 0) {
+        else if ( sou < 0) {
             throw new ArithmeticException("Access denied");
         }
         //vull que em doni el mateix que persona
