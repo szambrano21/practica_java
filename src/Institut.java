@@ -35,8 +35,6 @@ public class Institut {
 
         this.alumnos = alumnos;
 
-
-
     }
     public String imprimirInformacio() {
 
