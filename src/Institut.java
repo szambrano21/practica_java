@@ -4,40 +4,31 @@ import java.util.List;
 public class Institut {
     private String nom;
     //private Persona personas;
-    private List<String> personas;
-
-    private List<String> alumnos;
+    private List<Persona> personas = new ArrayList<>();
 
     public Institut() {
 
-    };
+    }
 
-    public void afegirProfe() {
-        List<String> personas = new ArrayList<String>();
-        personas.add("Juan");
-        personas.add("Pedro");
-        personas.add("Jose");
-        personas.add("Maria");
-        personas.add("Sofia");
+    public void nom(String nom) {
+        this.nom = nom;
+    }
 
-        this.personas = personas;
-
+    public void afegirPersones(Persona personas) {
+        this.personas.add(personas);
+    }
+    /*public void afegirProfe(Professor profe) {
+        this.personas.add(profe);
 
     }
 
-    public void afegirEstudiant() {
-        List<String> alumnos = new ArrayList<String>();
-        alumnos.add("sara");
-        alumnos.add("ismael");
-        alumnos.add("abraham");
-        alumnos.add("papo");
-        alumnos.add("dani");
-
-        this.alumnos = alumnos;
-
-    }
-    public String imprimirInformacio() {
-
-        return "lista de profesores " + this.personas + " i lista de alumnos: " + this.alumnos ;
+    public void afegirEstudiant(Estudiant alumno) {
+        this.personas.add(alumno);
+    }*/
+    public void imprimirInformacio()  throws Exception {
+        System.out.println("Institut la guineueta. Llista de persones:  " + this.nom);
+        for (Persona p : personas) {
+            System.out.println(p.obtenirDades());
+        }
     }
 }

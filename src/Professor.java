@@ -7,21 +7,21 @@ public class Professor extends Persona {
     }
 
 
-    public void canviarSou(double nouSou) {
+    public void canviarSou(double nouSou) throws Exception {
         this.sou = nouSou;
-    }
-
-    public String obtenirDades() {
 
         if ( sou > 3000) {
-            throw new ArithmeticException("Access denied");
+            throw new Exception("Error de sou");
         }
         else if ( sou < 0) {
-            throw new ArithmeticException("Access denied");
+            throw new Exception("Error de sou");
         }
+    }
+
+    public String obtenirDades() throws Exception  {
         //vull que em doni el mateix que persona
-        // mes la nota
-        return super.obtenirDades() + " El seu sou es:  " + this.sou;
+
+        return super.obtenirDades() + " (PROFE amb sou :  " + this.sou + ")";
     }
 
 }
