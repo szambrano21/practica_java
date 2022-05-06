@@ -26,6 +26,7 @@ public class Main {
 
         p2.canviarNom("Luis");
         p2.assignarDni("39437156Q");
+        //p2.assignarDni("39437156Q");
         dades = p2.obtenirDades();
         //System.out.println(dades);
 

@@ -26,7 +26,7 @@ public class Institut {
         this.personas.add(alumno);
     }*/
     public void imprimirInformacio()  throws Exception {
-        System.out.println("Institut la guineueta. Llista de persones:  " + this.nom);
+        System.out.println("Institut La " + this.nom + " . Llista de persones:  ");
         for (Persona p : personas) {
             System.out.println(p.obtenirDades());
         }
