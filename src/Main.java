@@ -38,7 +38,11 @@ public class Main {
         e.canviarNom("Pepito");
         e.assignarDni("39437196F");
         e.posarNota(8.7);
+        e.posarNota(5.6);
+        e.posarNota(3.2);
+        e.posarNota(9.6);
         e.posarNota(4.7);
+        e.posarNota(7.3);
         //e.posarNota(-8.5);
         //e.posarNota(12);
         dades = e.obtenirDades() ;
